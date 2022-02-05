@@ -1,0 +1,71 @@
+.gridLayout{
+      width: 10%;
+      padding-top: 2rem;
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(4, 1fr);
+      margin-left: 2rem;
+}
+
+
+.grid{
+      position: relative;
+      height: 100%; 
+      width: 250px;
+      overflow: hidden;
+      /* padding-left: 5rem; */
+}
+.overlay{
+      bottom:10%;
+      position: absolute;
+      /* display: none; */
+}
+.businessNameText{ 
+      width:fit-content;    
+      margin-top: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: black;
+      margin-left: 10px;
+      opacity: 0.5;
+      color: white;
+      white-space: nowrap;
+      padding: 3px;
+}
+
+.businessPriceText{
+      width: fit-content;
+      margin-top: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: black;
+      margin-left: 10px;
+      opacity: 0.5;
+      color: white;
+      white-space: nowrap;
+      padding: 3px;
+}
+
+.grid:hover + .overlay:hover{
+      display: block;
+}
+
+.grid img {
+      max-width:100%;
+      height:auto;
+      border-radius: 15px;
+      cursor: pointer;
+}
+
+
+@media (max-width: 660px) {
+      .gridLayout {
+            grid-template-columns: repeat(1, 1fr);       }
+
+}
+@media (max-width: 700px) {
+      .gridLayout { grid-template-columns: repeat(2, 1fr); }
+}
+
+
+
